@@ -3898,6 +3898,15 @@ export default function App() {
               {/* Dark Overlay for better text readability */}
               <div className="absolute inset-0 bg-slate-950/60 backdrop-blur-[1px]" />
 
+              {/* Bottom-left Music Toggle Button */}
+              <button 
+                onClick={() => setIsMusicEnabled(prev => !prev)}
+                className={`absolute bottom-6 left-6 z-20 p-4 rounded-2xl transition-all shadow-xl backdrop-blur-md ${isMusicEnabled ? 'text-yellow-500 bg-yellow-500/10 border border-yellow-500/30' : 'text-slate-500 bg-slate-900/80 border border-slate-800'} hover:text-white active:scale-95`}
+                title={isMusicEnabled ? "關閉音樂" : "開啟音樂"}
+              >
+                {isMusicEnabled ? <Volume2 className="w-7 h-7" /> : <VolumeX className="w-7 h-7" />}
+              </button>
+
               <div className="relative z-10 flex flex-col items-center gap-8 w-full max-w-sm">
                 <div className="flex flex-col items-center text-center">
                   <motion.h1 
