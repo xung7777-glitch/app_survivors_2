@@ -1,0 +1,115 @@
+{
+  "backup_info": {
+    "timestamp": "2024-05-22T10:00:00Z",
+    "description": "Full backup of game constants, balance parameters, and UI configuration for '小雪在邊疆修仙'."
+  },
+  "game_constants": {
+    "CANVAS_WIDTH": 800,
+    "CANVAS_HEIGHT": 1200,
+    "LOGICAL_WIDTH": 800,
+    "LOGICAL_HEIGHT": 1200,
+    "PLAYER_RADIUS": 20,
+    "ENEMY_SPAWN_RATE": 1200
+  },
+  "game_balance": {
+    "BASE": {
+      "PLAYER_HP": 1000,
+      "PLAYER_DAMAGE": 150,
+      "PLAYER_SWORDS": 1,
+      "PLAYER_PICKUP_RANGE": 120,
+      "EXP_REQUIRED": 100,
+      "ENEMY_HP": 80,
+      "ENEMY_GROWTH": 1.12,
+      "UPGRADE_DAMAGE": 50,
+      "UPGRADE_COOLDOWN": 0.1,
+      "UPGRADE_PICKUP_RANGE": 30,
+      "UPGRADE_SWORDS": 1
+    },
+    "MULTIPLIERS": {
+      "SIMPLE": {
+        "ENEMY_HP": 0.5,
+        "PLAYER_GROWTH": 1.5,
+        "EXP_GAIN": 2.0
+      },
+      "NORMAL": {
+        "ENEMY_HP": 1.0,
+        "PLAYER_GROWTH": 1.0,
+        "EXP_GAIN": 1.0
+      }
+    }
+  },
+  "ui_config": {
+    "hp_bar": {
+      "height": "h-6",
+      "font_size": "text-base",
+      "icon_color": "text-red-500"
+    },
+    "xp_bar": {
+      "height": "h-6",
+      "font_size": "text-base",
+      "icon_color": "text-blue-400"
+    },
+    "stats_display": {
+      "font_size": "text-xl",
+      "icon_sizes": "w-5 h-5"
+    },
+    "ultimate_display": {
+      "text_size": "text-lg",
+      "icon_size": "w-6 h-6"
+    },
+    "upgrade_screen": {
+      "title_box_padding": "px-16 py-6",
+      "title_text_size": "text-5xl",
+      "subtitle_text_size": "text-4xl",
+      "upgrade_item_padding": "p-4",
+      "upgrade_icon_container_size": "w-20 h-20",
+      "upgrade_icon_size": "w-8 h-8",
+      "upgrade_name_size": "text-xl",
+      "upgrade_desc_size": "text-sm"
+    },
+    "pause_menu": {
+      "button_padding": "py-8",
+      "button_text_size": "text-4xl",
+      "button_icon_size": "w-14 h-14",
+      "title_size": "text-5xl"
+    }
+  },
+  "character_styles": [
+    {
+      "id": "classic",
+      "name": "青雲劍修",
+      "description": "正統修仙弟子，御劍飛行，正氣凜然。",
+      "color": "#60a5fa"
+    },
+    {
+      "id": "cyber",
+      "name": "賽博小雪",
+      "description": "來自未來的修仙者，融合了科技與靈力。",
+      "color": "#f472b6"
+    },
+    {
+      "id": "fire",
+      "name": "烈焰仙子",
+      "description": "掌控地心熔岩之力的強大修仙者。",
+      "color": "#f87171"
+    },
+    {
+      "id": "dark",
+      "name": "幽冥魔女",
+      "description": "從九幽深淵歸來的神秘修法者。",
+      "color": "#a78bfa"
+    }
+  ],
+  "enemy_visuals": [
+    { "shape": "SPIRIT", "color": "#94a3b8" },
+    { "shape": "DEMON", "color": "#f87171" },
+    { "shape": "TRIANGLE", "color": "#fbbf24" },
+    { "shape": "SNAKE", "color": "#4ade80" },
+    { "shape": "SQUARE", "color": "#60a5fa" },
+    { "shape": "DIAMOND", "color": "#c084fc" },
+    { "shape": "HEXAGON", "color": "#f472b6" },
+    { "shape": "BEAST", "color": "#fb923c" },
+    { "shape": "STAR", "color": "#2dd4bf" },
+    { "shape": "BOSS", "color": "#fde047" }
+  ]
+}
